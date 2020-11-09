@@ -1,5 +1,7 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
+    randomKlejnoty();
+    randomArtefakty();
+    randomZaklecia();
 });
 
 function randomKlejnoty(){
