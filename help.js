@@ -18,3 +18,10 @@ function randomCards(limit, type, from, to){
         $("#" + type + "").append("<img src=\"" + type + "/" + unique_random_numbers[i] + ".PNG\" height=\"150px\" width=\"150px\">")
     }
 }
+
+function losuj(){
+    $("img").remove();
+    randomCards(3, "klejnoty", 1, 7);
+    randomCards(2, "artefakty", 1, 6);
+    randomCards(4, "zaklecia", 1, 14);
+}
