@@ -11,6 +11,9 @@ function randomKlejnoty(){
             unique_random_numbers.push( random_number );
         }
     }
+    for(var i = 0; i < unique_random_numbers.length; i++){
+        $("#klejnoty").append("<img src=\"klejnoty/" + unique_random_numbers[i] + ".PNG\">")
+    }
 
 }
 
@@ -23,6 +26,9 @@ function randomArtefakty(){
             unique_random_numbers.push( random_number );
         }
     }
+    for(var i = 0; i < unique_random_numbers.length; i++){
+        $("#artefakty").append("<img src=\"artefakty/" + unique_random_numbers[i] + ".PNG\">")
+    }
 }
 
 function randomZaklecia(){
@@ -33,6 +39,9 @@ function randomZaklecia(){
             // Yay! new random number
             unique_random_numbers.push( random_number );
         }
+    }
+    for(var i = 0; i < unique_random_numbers.length; i++){
+        $("#zaklecia").append("<img src=\"zaklecia/" + unique_random_numbers[i] + ".PNG\">")
     }
 }
 
