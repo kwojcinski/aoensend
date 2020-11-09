@@ -12,7 +12,7 @@ function randomKlejnoty(){
         }
     }
     for(var i = 0; i < unique_random_numbers.length; i++){
-        $("#klejnoty").append("<img src=\"klejnoty/" + unique_random_numbers[i] + ".PNG\">")
+        $("#klejnoty").append("<img src=\"klejnoty/" + unique_random_numbers[i] + ".PNG\" height=\"120px\" width=\"120px\">")
     }
 
 }
@@ -27,7 +27,7 @@ function randomArtefakty(){
         }
     }
     for(var i = 0; i < unique_random_numbers.length; i++){
-        $("#artefakty").append("<img src=\"artefakty/" + unique_random_numbers[i] + ".PNG\">")
+        $("#artefakty").append("<img src=\"artefakty/" + unique_random_numbers[i] + ".PNG\" height=\"120px\" width=\"120px\">")
     }
 }
 
@@ -41,7 +41,7 @@ function randomZaklecia(){
         }
     }
     for(var i = 0; i < unique_random_numbers.length; i++){
-        $("#zaklecia").append("<img src=\"zaklecia/" + unique_random_numbers[i] + ".PNG\">")
+        $("#zaklecia").append("<img src=\"zaklecia/" + unique_random_numbers[i] + ".PNG\" height=\"120px\" width=\"120px\">")
     }
 }
 
