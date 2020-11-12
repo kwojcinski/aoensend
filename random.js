@@ -15,7 +15,7 @@ function randomCards(limit, type, from, to){
         }
     }
     for(var i = 0; i < unique_random_numbers.length; i++){
-        $("#" + type + "").append("<img src=\"" + type + "/" + unique_random_numbers[i] + ".PNG\" height=\"150px\" width=\"150px\">")
+        $("#" + type + "").append("<img src=\"" + type + "/" + unique_random_numbers[i] + ".PNG\">")
     }
 }
 

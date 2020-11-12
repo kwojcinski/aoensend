@@ -1,3 +1,44 @@
-div {
-    margin: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    margin-right: 5px;
+}
+
+body{
+    background-image: linear-gradient(90deg, black, #302b63, black);
+    color:white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+section{
+
+}
+p {
+    font-size: 2rem;
+    margin-bottom: initial;
+}
+
+.cent{
+    margin-bottom: 2vh;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rig{
+    margin-left:auto;
+}
+
+input{
+    margin: 1vh;
 }
