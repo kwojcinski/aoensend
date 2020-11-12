@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $("img").remove();
     randomCards(3, "klejnoty", 1, 7);
     randomCards(2, "artefakty", 1, 6);
     randomCards(4, "zaklecia", 1, 14);
