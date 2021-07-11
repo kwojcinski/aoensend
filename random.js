@@ -28,7 +28,10 @@ function randomCards(limit, type, from, to){
                 $("#" + type + "0").append("<img class=\"imgCard fade\" src=\"" + type + "/" + unique_random_numbers[i] + ".PNG\">")
         }
         else if(window.innerWidth < 420){
-            $("#" + type + "" + i + "").append("<img class=\"imgCard fade\" src=\"" + type + "/" + unique_random_numbers[i] + ".PNG\">")
+            if(i >= 2)
+                $("#" + type + "1").append("<img height=\"200vh\" class=\"imgCard fade\" src=\"" + type + "/" + unique_random_numbers[i] + ".PNG\">")
+            else
+                $("#" + type + "0").append("<img height=\"200vh\" class=\"imgCard fade\" src=\"" + type + "/" + unique_random_numbers[i] + ".PNG\">")
         }
         else{
             $("#" + type + "0").append("<img class=\"imgCard fade\" src=\"" + type + "/" + unique_random_numbers[i] + ".PNG\">")
