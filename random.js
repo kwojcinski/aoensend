@@ -1,8 +1,13 @@
+var rotation = 0;
+
 $( document ).ready(function() {
-    $("img").remove();
+    $(".imgCard").remove();
     randomCards(3, "klejnoty", 1, 7);
     randomCards(2, "artefakty", 1, 6);
     randomCards(4, "zaklecia", 1, 14);
+    setTimeout(() => { 
+        $(".imgCard").removeClass('fade')
+    }, 100);
 });
 
 
@@ -16,13 +21,24 @@ function randomCards(limit, type, from, to){
         }
     }
     for(var i = 0; i < unique_random_numbers.length; i++){
-        $("#" + type + "").append("<img src=\"" + type + "/" + unique_random_numbers[i] + ".PNG\">")
+        $("#" + type + "").append("<img class=\"imgCard fade\" src=\"" + type + "/" + unique_random_numbers[i] + ".PNG\">")
     }
 }
 
 function losuj(){
-    $("img").remove();
-    randomCards(3, "klejnoty", 1, 7);
-    randomCards(2, "artefakty", 1, 6);
-    randomCards(4, "zaklecia", 1, 14);
+    rotation -= 360;
+    var button = document.querySelector('input')
+    button.style.transform = "translateZ(0px) rotateZ(" + rotation + "deg)"
+    $(".imgCard").addClass('fade')
+    setTimeout(() => { 
+        $(".imgCard").remove();
+        randomCards(3, "klejnoty", 1, 7);
+        randomCards(2, "artefakty", 1, 6);
+        randomCards(4, "zaklecia", 1, 14);
+        setTimeout(() => { 
+            $(".imgCard").removeClass('fade')
+        }, 100);
+    }, 500);
+    
+    
 }
