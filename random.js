@@ -21,7 +21,18 @@ function randomCards(limit, type, from, to){
         }
     }
     for(var i = 0; i < unique_random_numbers.length; i++){
-        $("#" + type + "").append("<img class=\"imgCard fade\" src=\"" + type + "/" + unique_random_numbers[i] + ".PNG\">")
+        if(window.innerWidth > 420 && window.innerWidth < 840){
+            if(i >= 2)
+                $("#" + type + "1").append("<img class=\"imgCard fade\" src=\"" + type + "/" + unique_random_numbers[i] + ".PNG\">")
+            else
+                $("#" + type + "0").append("<img class=\"imgCard fade\" src=\"" + type + "/" + unique_random_numbers[i] + ".PNG\">")
+        }
+        else if(window.innerWidth < 420){
+            $("#" + type + "" + i + "").append("<img class=\"imgCard fade\" src=\"" + type + "/" + unique_random_numbers[i] + ".PNG\">")
+        }
+        else{
+            $("#" + type + "0").append("<img class=\"imgCard fade\" src=\"" + type + "/" + unique_random_numbers[i] + ".PNG\">")
+        }            
     }
 }
 
