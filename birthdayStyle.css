@@ -170,6 +170,7 @@ div#sea {
   width: 100%;*/
   height: auto;
   transform: translateY(10px) rotate(-20deg);
+  margin: 20px;
 }
 .icons .row {
   text-align: center;
