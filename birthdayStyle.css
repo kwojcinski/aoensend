@@ -456,3 +456,50 @@ div#sea {
     right: 230px;
   }
 }
+
+.ps{
+  right: 320px;
+  bottom: 212px;
+  position: absolute;
+  color: white;
+  display: none;
+}
+
+@media only screen and (max-width: 700px){
+  .moon {
+    right: 20px;
+  }
+
+  .icons .row span{
+    font-size: 40px;
+  }
+
+  .icons{
+    margin: 40px 0 0 40px;
+  }
+
+  div#beach{
+    background-size: 1200px;
+  }
+
+  div#video {
+    position: absolute;
+    right: 174px;
+    bottom: 140px;
+  }
+
+  div#video iframe {
+    width: 175px;
+    height: 110px;
+  }
+
+  .ps{
+    right: 180px;
+bottom: 127px;
+position: absolute;
+color: white;
+display: none;
+font-size: 10px;
+width: 150px;
+  }
+} 
