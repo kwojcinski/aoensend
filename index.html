@@ -3,73 +3,117 @@
 <html>
   <head>
       <meta charset="UTF-8"/>
-       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-      <title>Aeon's End</title>  
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Wszystkiego najlepszego!</title>  
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
-      <script src="random.js"></script>
+      <script src="index.js"></script>
 
         
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         
-      <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
       
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="birthdayStyle.css">
   </head>
-  <body>
-    <section class="wrapper">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-        <div>
-            <div class="centp">
-                <input height="40px" type="image" src="reload.png" onclick="losuj()"/>
-            </div>
-        <div id="title">
-            <span>Klejnoty:</span>
-            <img class="imgCard" src="klejnoty/1.PNG">
-            <img class="imgCard" src="klejnoty/2.PNG">
-            <img class="imgCard" src="klejnoty/3.PNG">
-        </div>
-        <div class="cent" id="klejnoty0">
-        </div>
-        <div class="cent" id="klejnoty1">
-        </div>
-        <div id="title">
-            <span>Artefakty:</span>
-            <img class="imgCard" src="artefakty/1.PNG">
-            <img class="imgCard" src="artefakty/2.PNG">
-        </div>
-        <div class="cent" id="artefakty0">
-        </div>
-        <div class="cent" id="artefakty1">
-        </div>
-        <div id="title">
-            <span>Zaklęcia:</span>
-            <img class="imgCard" src="zaklecia/1.PNG">
-            <img class="imgCard" src="zaklecia/2.PNG">
-            <img class="imgCard" src="zaklecia/3.PNG">
-            <img class="imgCard" src="zaklecia/1.PNG">
-        </div>
-        <div class="cent" id="zaklecia0">
-        </div>
-        <div class="cent" id="zaklecia1">
-        </div>
-        </div>
-        <br />
-        <div id="myModal" class="modal">
+  <body> 
+    <!-- <canvas id="canvas"></canvas>
+    <div class='stars js-plaxify' data-xrange='60' data-yrange='60'></div>
+<div class='moon js-plaxify' data-xrange='20' data-yrange='20'>
+  <div class='crater1'></div>
+  <div class='crater2'></div>
+  <div class='crater3'></div>
+</div>
 
-            <!-- The Close Button -->
-            <span class="close">&times;</span>
-          
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img01">
-          
-        </div>
-    </section>
+<div class="birthday-gift">
+    <div class="gift">
+    <input id='click' type='checkbox'>
+    <label class='click' for='click'></label>
+    <div class="wishes">Happy Birthday!</div>
+         <div class="sparkles">
+        <div class="spark1"></div>
+        <div class="spark2"></div>
+        <div class="spark3"></div>
+        <div class="spark4"></div>
+        <div class="spark5"></div>
+        <div class="spark6"></div>
+      </div>
+      </div>
+  </div>  -->
+  <div class='moon'>
+    <div class='crater1'></div>
+    <div class='crater2'></div>
+    <div class='crater3'></div>
+  </div>
+  <canvas id="canvas"></canvas>
+  <div id="sea"></div>
+  <div id="beach"></div>
+  <img src="https://dl.dropbox.com/s/2k0mtrxc2dqurmh/jumping.png" alt="jumping-people" id="people" />
+  <!--<img src="https://dl.dropbox.com/s/zoftkmdxyyqr8ce/belair.png" alt="jumping-people" id="car" />-->
+  
+  <div id="merrywrap" class="merrywrap">
+    <div class="giftbox">
+      <div class="cover">
+        <div></div>
+      </div>
+      <div class="box"></div>
+    </div>
+    <div class="icons">
+      <div class="row"> 
+        <span>W</span>
+        <span>s</span>
+        <span>z</span>
+        <span>y</span>
+        <span>t</span>
+        <span>k</span>
+        <span>i</span>
+        <span>e</span>
+        <span>g</span>
+        <span>o</span>
+      </div>
+      <div class="row"> 
+        <span>N</span>
+        <span>a</span>
+        <span>j</span>
+        <span>l</span>
+        <span>e</span>
+        <span>p</span>
+        <span>s</span>
+        <span>z</span>
+        <span>e</span>
+        <span>g</span> 
+        <span>o</span> 
+      </div>
+      <div class="row"> 
+        <span>A</span>
+        <span>g</span>
+        <span>a</span>
+        <span>t</span>
+        <span>a</span>
+        <span>!</span>
+        <!-- <span>t</span>
+        <span>h</span>
+        <span>e</span>
+        <span>a</span>
+        <span>r</span>
+        <span>t</span> -->
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <div id="video">
+  <!--<iframe width="255" height="155" src="https://www.youtube.com/embed/KDxJlW6cxRk?controls=0&loop=1" frameborder="0" allowfullscreen></iframe>-->
+  </div>
+  <div id="ps" style="right: 320px;
+  bottom: 212px;
+  position: absolute;
+  color: white;
+  display: none;">
+    PS. Zarezerwuj sobie 27 czerwca :)
+  </div>
   </body>
 </html>
