@@ -328,7 +328,7 @@ window.requestAnimFrame = function () {
     // <iframe width="560" height="315" src="https://www.youtube.com/embed/yrtWLyp5gLI?start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   
     var ifrm = document.createElement("iframe");
-    ifrm.setAttribute("src", "https://www.youtube.com/embed/yrtWLyp5gLI?start=6&controls=0&loop=1&autoplay=1");
+    ifrm.setAttribute("src", "https://www.youtube.com/embed/yrtWLyp5gLI?start=6&controls=1&loop=1&autoplay=1&playsinline=1");
     //ifrm.style.width = `${w}px`;
     //ifrm.style.height = `${h}px`;
     ifrm.style.border = 'none';
