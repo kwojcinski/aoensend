@@ -335,5 +335,6 @@ window.requestAnimFrame = function () {
     document.querySelector('#video').appendChild(ifrm);
 
     $("#ps").show();
+    $(".giftbox").remove() 
   }
 });
