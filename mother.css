@@ -59,7 +59,7 @@
 }
  .flower_stem {
 	 width: 0.5rem;
-	 height: 20rem;
+	 height: 22rem;
 	 max-height: 0;
 	 background: #86af6e;
 }
@@ -331,9 +331,7 @@
 	 h2 {
 		 font-size: 1.777rem;
 	}
-	.heartPulse{
-		display:block;
-	}
+	
 	.grass{
 		bottom: 0em;
 	}
