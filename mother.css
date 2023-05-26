@@ -1,0 +1,345 @@
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+ body {
+	background: linear-gradient(to bottom right, rgba(253,187,45,0.75), rgba(34,193,195,1));
+	 color: white;
+	 overflow: hidden;
+	 background-attachment: fixed;
+}
+ .dark {
+	 position: absolute;
+	 width: 100%;
+	 top: 0;
+	 bottom: 0;
+	 background: rgba(29, 25, 52, 0.9);
+	 z-index: 5000;
+}
+ h1, h2 {
+	 position: relative;
+	 text-align: center;
+	 font-family: 'Poiret One', 'Oleo Script', cursive;
+	 text-shadow: 1px 1px 1px rgba(77, 77, 77, 0.5);
+	 z-index: 1000;
+	 margin: 0;
+}
+ h1 {
+	 margin-top: 4.5rem;
+	 font-size: 8vw;
+}
+ h2 {
+	 font-size: 6vw;
+	 font-family: 'Oleo Script', cursive;
+}
+ .sun {
+	 position: absolute;
+	 top: 2rem;
+	 left: 2rem;
+	 width: 5rem;
+	 height: 5rem;
+	 background: khaki;
+	 border-radius: 100%;
+	 box-shadow: 0 0 20px khaki;
+}
+ .flowers {
+	 position: absolute;
+	 width: 100%;
+	 bottom: 0;
+	 display: flex;
+	 justify-content: space-around;
+	 align-items: flex-end;
+}
+ .flower {
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+}
+ .flower_head {
+	margin-bottom: -20px;
+	font-size: 100px;
+}
+ .flower_stem {
+	 width: 0.5rem;
+	 height: 20rem;
+	 max-height: 0;
+	 background: #86af6e;
+}
+ .flower_stem::after {
+	 content: '';
+	 margin-left: 0.5rem;
+	 margin-top: 1.5rem;
+	 width: 3em;
+	 height: 3em;
+	 display: block;
+	 background: #4d916e;
+	 border-radius: 2em 0 2em 0em;
+}
+
+
+ .yellow {
+	 width: 7.5rem;
+	 height: 7.5rem;
+	 background: khaki;
+}
+ .pink {
+	 width: 6rem;
+	 height: 6rem;
+	 background: #e2b1b1;
+}
+ .fadeIn {
+	 opacity: 0;
+	 animation: fadeIn 1s 2s ease-in forwards;
+}
+ .slideIn {
+	 transform: translateX(-5rem);
+	 animation: slideIn 3s ease-out forwards;
+}
+ .fadeOut {
+	 opacity: 1;
+	 animation: fadeOut 4s 0.25s ease forwards;
+}
+ .delay-1 {
+	 animation-delay: 3s;
+}
+ .grow-12 {
+	 animation: grow-12 2s 0.5s ease-in-out forwards;
+}
+ .grow-15 {
+	 animation: grow-15 2s 1.5s ease-in-out forwards;
+}
+ .grow-9 {
+	 animation: grow-9 2s 2.5s ease-in-out forwards;
+}
+
+.grow-9::after {
+	border-radius: 0em 2em 0em 2em;
+	margin-left: -3rem;
+}
+ .pulse {
+	 animation: pulse 1s 0.5s ease-in-out infinite alternate;
+}
+.heartPulse {
+	display: inline flow-root;
+	animation: pulse 1s 0.5s ease-in-out infinite alternate;
+	font-size: 0.85em;
+}
+
+
+.grass {
+	position: absolute;
+	/*   display: inline-block; */
+	width: 100%;
+	height: 8rem;
+	bottom:0;
+	overflow: hidden;
+  /*     opacity:0; */
+  }
+  
+  .blade {
+	height: 6rem;
+	width: 1rem;
+    background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+	background-size: 300px 300px;
+	background-color: #00e676;
+	border-radius: 100% 0 50% 0;
+	float: left;
+	transform-origin: 50% 100%;
+	margin-top: 2rem;
+	margin-left: -0.5rem;
+  /*   box-shadow: rgba(0,0,0, 0.25) 0.25rem 1rem 0.25rem; */
+  }
+  
+  .blade:nth-of-type(2n) {
+	width: 0.75rem;
+	transform: rotate(10deg);
+	height: 5rem;
+	margin-top: 3rem;
+  }
+  
+  .blade:nth-of-type(3n) {
+	background-color: #00c853;
+	border-radius: 0 100% 0 50%;
+	height: 7rem;
+	margin-top: 1rem;
+	/*   transform: rotate(-10deg); */
+  }
+  
+  .blade:nth-of-type(4n) {
+	border-radius: 0 100% 0 50%;
+	transform: rotate(-8deg);
+  }
+  
+  .blade:nth-of-type(5n) {
+	transform: rotate(4deg);
+	border-radius: 0 100% 0 50%;
+  
+  }
+  
+  .blade:nth-of-type(6n) {
+  }
+  
+  .blade:nth-of-type(7n) {
+	background-color: #81c784;
+	border-radius: 100% 0 50% 0;
+			animation: wind-seven 7s ease alternate infinite;
+	
+  }
+  
+  .blade:nth-of-type(8n) {
+  }
+  
+  .blade:nth-of-type(9n) {
+	background-color: #4caf50;
+	  animation: wind-three 7s ease alternate infinite;
+  }
+  
+  .blade:nth-of-type(13n) {
+	background-color: #66bb6a;
+	height: 7.5rem;
+	margin-top: 0.5rem;
+  
+  }
+  
+  .blade:nth-of-type(16n) {
+	width: 0.5rem;
+	transform: rotate(-5deg);
+	height: 8rem;
+	margin-top: 0;
+	animation: wind-five 7s ease alternate infinite;
+  }
+  
+  .blade:nth-of-type(24n) {
+	transform: rotate(12deg);
+	height: 7.5rem;
+	margin-top: 0.5;
+  
+  }
+ @keyframes fadeIn {
+	 100% {
+		 opacity: 1;
+	}
+}
+ @keyframes slideIn {
+	 100% {
+		 transform: translateX(0);
+	}
+}
+ @keyframes fadeOut {
+	 100% {
+		 opacity: 0;
+	}
+}
+ @keyframes grow-12 {
+	 100% {
+		 max-height: 14rem;
+	}
+}
+ @keyframes grow-15 {
+	 100% {
+		 max-height: 17rem;
+	}
+}
+ @keyframes grow-9 {
+	 100% {
+		 max-height: 11rem;
+	}
+}
+ @keyframes pulse {
+	 0% {
+		 transform: scale(1);
+	}
+	 100% {
+		 transform: scale(1.1);
+	}
+}
+
+@keyframes wind-three {
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes wind-five {
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes wind-seven {
+  100% {
+    transform: rotate(7deg);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(-30deg);
+  }
+  10% {
+    transform: rotate(55deg);
+  }
+  15% {
+    transform: rotate(35deg);
+  }
+  20% {
+    transform: rotate(55deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  30% {
+    transform: rotate(60deg);
+  }
+  35% {
+    transform: rotate(45deg);
+  }
+  40% {
+    transform: rotate(55deg);
+  }
+  46% {
+    transform: rotate(40deg);
+  }
+  50% {
+    transform: rotate(55deg);
+  }
+  55% {
+    transform: rotate(45deg);
+  }
+  60% {
+    transform: rotate(58deg);
+  }
+  65% {
+    transform: rotate(42deg);
+  }
+  70% {
+    transform: rotate(55deg);
+  }
+  75% {
+    transform: rotate(40deg);
+  }
+  80% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
+ @media (max-width: 480px) {
+	 h1 {
+		 font-size: 3.5rem;
+		 margin-top: 2.5em;
+	}
+	 h2 {
+		 font-size: 1.777rem;
+	}
+	.heartPulse{
+		display:block;
+	}
+	.grass{
+		bottom: 0em;
+	}
+	.flower_head {
+		font-size: 80px;
+	}
+}
+ 
