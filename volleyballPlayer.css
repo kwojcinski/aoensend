@@ -1,0 +1,622 @@
+body {
+  background: #fa52;
+  display: flex;
+  justify-content: center;
+}
+
+.main-div {
+  min-width: 100vh;
+  display: inline-flex;
+  position: relative;
+}
+
+@media (prefers-reduced-motion) {
+  * {
+    animation: none !important;
+  }
+}
+
+.title {
+  margin-top: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.title h1 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 60px;
+  margin: 5px 0;
+
+  color: #674ea7;
+}
+
+.title h2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #e25c67;
+  line-height: 1;
+}
+
+.title h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 16px;
+  color: #674ea7;
+  margin-top: 5px;
+}
+
+
+.title p {
+  color: #564861;
+  margin: 30px 0 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+
+.article-2 {
+  --line-color: #963;
+  --skin: #f4e6de;
+  --skin-dark: #f0d0c0;
+  --shirt: white;
+  position: relative;
+  font-size: 0.75vmin;
+  width: 100em;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-bottom: 0.5em solid;
+  color: var(--line-color);
+  margin-top: -30%;
+
+  & *,
+  & *::before,
+  & *::after {
+    position: absolute;
+    box-sizing: border-box;
+  }
+
+  .person-2 {
+    width: 45%;
+    aspect-ratio: 0.8;
+    bottom: 0;
+    left: 5%;
+
+    .body-2 {
+      width: 50%;
+      height: 61%;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .chest-2 {
+        width: 85%;
+        height: 160%;
+        background:
+          var(--skin);
+        left: 50%;
+        top: 3%;
+        translate: -50% 0;
+        border-radius: 130% / 10% 10% 20% 20%;
+        border: 0.4em solid black;
+        box-shadow: inset 0 0.4em 0 -0.3em #454545;
+      }
+
+      .shirt-2 {
+        width: 86%;
+        height: 160%;
+        background:
+          /* buttons */
+          radial-gradient(circle at 50% 35%, #454545 0.5em, #fff0 0),
+          radial-gradient(circle at 50% 45%, #454545 0.5em, #fff0 0),
+          #5a5a5a;
+        background-repeat: no-repeat;
+        left: 50%;
+        top: 10%;
+        translate: -50% 0;
+        border-radius: 130% / 10% 10% 20% 20%;
+        border-left-color: black;
+        box-shadow:
+          inset -1em 1em #454545,
+      }
+
+      .tuxedo {
+        width: 86%;
+        z-index: 2;
+        left: 7%;
+        top: -3%;
+      }
+
+      .arm-2 {
+        width: 50%;
+        height: 100%;
+        transform: translate(-21%) skew(-15deg) rotate(-20deg);
+        top: 8.75%;
+        left: -20%;
+        border-radius: 100% 0 0 0;
+        border: 0.45em solid;
+        border-right: 0;
+        border-bottom: 0;
+        border-color: black;
+        box-shadow:
+          inset 1em 0 #454545,
+          inset 3.25em 3em #5a5a5a;
+        clip-path: polygon(0 0, 100% 0, 85% 15%, 100% 100%, 0 100%);
+      }
+
+      .arm-2-2 {
+        width: 90%;
+        height: 60%;
+        border-radius: 50% / 0 0 100% 100%;
+        left: 87%;
+        top: 7%;
+        transform: skewY(-5deg) rotate(-9deg);
+        box-shadow:
+          inset 1em -1em #454545,
+          inset -1.75em -3em 0 0.5em #5a5a5a,
+          inset 3.25em -3em 0 #5a5a5a,
+          inset -2.1em -3.2em 0 0.5em black;
+
+
+        &::before {
+          content: "";
+          width: 20%;
+          aspect-ratio: 1;
+          background: #5a5a5a;
+          left: -2%;
+          top: -9%;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .head-2 {
+      width: 25%;
+      aspect-ratio: 3/4;
+      top: 20.5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .ear-2 {
+        width: 22%;
+        height: 30%;
+        background: var(--skin-dark);
+        left: -14%;
+        border-radius: 100% 0 0 100% /50%;
+        border: 0.4em solid;
+        border-right: 0;
+        top: 47%;
+        transform: rotate(-10deg);
+
+        &+& {
+          width: 20%;
+          left: 90%;
+          top: 45%;
+          background: var(--skin);
+          transform: scaleX(-1);
+        }
+      }
+
+      .neck-2 {
+        width: 50%;
+        height: 66%;
+        top: 65%;
+        border: 0.4em solid;
+        border-bottom-width: 0.45em;
+        border-radius: 100% / 40%;
+        left: 50%;
+        translate: -50% 0;
+        box-shadow: inset 1em 0em 0 -0.1em var(--skin-dark);
+        background: var(--skin);
+      }
+
+      .hair-back-1-2 {
+        width: 30%;
+        height: 60%;
+        background: black;
+        border-radius: 100% / 80% 80% 120% 120%;
+        left: -9%;
+        top: 5%;
+      }
+
+      .hair-back-2-2 {
+        width: 30%;
+        height: 60%;
+        background: black;
+        border-radius: 100% / 80% 80% 120% 120%;
+        left: 74%;
+        top: 5%;
+      }
+
+      .face-2 {
+        width: 100%;
+        height: 100%;
+        border: 0.5em solid;
+        border-left: 0.5em solid var(--skin-dark);
+        border-radius: 60% / 5em 5em 10em 10em;
+        background:
+          conic-gradient(from 230deg at 60% 70%, var(--skin-dark) 120deg, #0000 0),
+          linear-gradient(90deg, var(--skin-dark) 52%, #0000 0),
+          var(--skin);
+        background-repeat: no-repeat;
+
+        .mouth-2 {
+          position: absolute;
+          background-color: currentColor;
+          width: 35%;
+          height: 7%;
+          border-radius: 7px 7px 100px 100px;
+          top: 80%;
+          left: 35%;
+          z-index: 3;
+        }
+
+        .glasses-2 {
+          width: 52%;
+          height: 30%;
+          background: #000;
+          border-radius: 50% / 10% 10% 60% 50%;
+          top: 40%;
+          left: -5%;
+
+          &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #000;
+            border-radius: 50% / 10% 10% 50% 60%;
+            left: 115%;
+          }
+
+          &::after {
+            content: "";
+            width: 25%;
+            height: 55%;
+            border-top: 0.5em solid #000;
+            border-radius: 50% / 100% 100% 0 0;
+            left: 95%;
+            top: 10%;
+          }
+        }
+
+        .hair-front-2 {
+          width: 113%;
+          height: 45%;
+          background: black;
+          border-radius: 100% 0 120% 5%;
+          rotate: 18deg;
+          top: -14%;
+          left: -6%;
+
+          &::before {
+            content: "";
+            width: 25%;
+            height: 35%;
+            right: 30%;
+            top: 75%;
+            transform: translateY(-20%) scaleY(-1);
+            background: black;
+            clip-path: polygon(0 0, 60% 50%, 60% 0, 100% 90%, 20% 100%)
+          }
+        }
+      }
+    }
+
+    .hand-2 {
+      width: 5em;
+      height: 6em;
+      background: var(--skin);
+      border-radius: 100% 0 0% 100%;
+      border: 0.4em solid;
+      border-left-width: 0.5em;
+      border-bottom-color: var(--skin);
+      left: 99%;
+      top: 33%;
+      transform: rotate(-3deg);
+
+      &::before {
+        content: "";
+        width: 40%;
+        height: 100%;
+        border-radius: 80% 20% 0 0;
+        background: var(--skin);
+        border: 0.4em solid;
+        border-bottom: 0;
+        right: 0;
+        transform: translate(0.39em, -98%);
+        border-top-color: var(--skin);
+      }
+    }
+
+    .ball {
+      animation: spinball 0.25s linear infinite;
+      width: 12em;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      left: 95.5%;
+      top: 3%;
+    }
+  }
+
+  .person {
+    width: 45%;
+    aspect-ratio: 1.1;
+    bottom: 0;
+    left: 55%;
+
+
+    .body {
+      width: 50%;
+      height: 60%;
+      bottom: 0;
+      left: 48%;
+      transform: translateX(-50%);
+
+      .chest {
+        width: 76%;
+        left: 50%;
+        transform: translate(-50%);
+        height: 225%;
+        background:
+          var(--skin);
+        border-radius: 130% / 30% 30% 320% 0%;
+        border-top: 0.5em solid;
+        box-shadow:
+          inset 2em 1em var(--skin-dark),
+          inset 3.25em 3em var(--skin);
+
+      }
+
+      .shirt {
+        width: 86%;
+        height: 160%;
+        background:
+          radial-gradient(80% 35% at 0 0, #0000 90%, var(--shirt) 92%) 0 0 / 25% 100%,
+          radial-gradient(80% 35% at 100% 0, #0000 90%, var(--shirt) 92%) 100% 0 / 25% 100%,
+          radial-gradient(48% 12% at 50% -2%, #0000 98%, var(--shirt)) 50% 0% / 52% 100%,
+          #0000;
+        background-repeat: no-repeat;
+        left: 50%;
+        top: 3%;
+        translate: -50% 0;
+        border-radius: 130% / 10% 10% 20% 20%;
+
+        &::before {
+          content: "";
+          width: 10%;
+          height: 14%;
+          background: none;
+          border-radius: 50%;
+          top: 3%;
+          transform: translate(-20%, 0) rotate(4deg);
+        }
+      }
+
+      .arm {
+        width: 35%;
+        height: 73.25%;
+        transform: translate(8%) skew(-16deg);
+        top: 10%;
+        border-left-color: var(--skin-dark);
+
+        &::before {
+          content: "";
+          width: 90%;
+          height: 95%;
+          border: 0.35em solid;
+          bottom: 0;
+          border-radius: 0 0 0 4.25em;
+          background:
+            linear-gradient(currentColor 0 0) 100% 73% / 60% 0.3em no-repeat var(--skin);
+          left: 1%;
+        }
+
+        &.left::before {
+          box-shadow:
+            inset 1.5em 0 var(--skin-dark),
+            inset 3.25em 3em var(--skin),
+            inset 3.6em 3.25em;
+        }
+
+        &::after {
+          content: "";
+          width: 100%;
+          height: 60%;
+          border-radius: 100% / 0 0 20% 20%;
+        }
+
+        &+& {
+          transform: scaleX(-1) skew(-20deg);
+          left: 65.75%;
+
+          &::before {
+            border-radius: 0 0 0 5em;
+          }
+        }
+      }
+    }
+
+    .hand {
+      width: 17%;
+      aspect-ratio: 1.1;
+      border: 0.5em solid;
+      border-left: 0.7em solid;
+      border-bottom: 0.4em solid #0000;
+      border-radius: 50%;
+      background: var(--skin);
+      box-shadow: inset 1.5em 0 0 -0.5em var(--skin-dark);
+      rotate: -10deg;
+      top: -14%;
+      left: 78%;
+      z-index: 2;
+    }
+
+    .map {
+      width: 43%;
+      aspect-ratio: 1.1;
+      top: 64%;
+      left: 27%;
+    }
+
+    .head {
+      width: 25%;
+      aspect-ratio: 4 / 5;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .ear {
+        width: 22%;
+        height: 30%;
+        background: var(--skin-dark);
+        left: -14%;
+        border-radius: 100% 0 0 100% /50%;
+        border: 0.4em solid;
+        border-right: 0;
+        top: 47%;
+        transform: rotate(-10deg);
+
+        &+& {
+          width: 20%;
+          left: 85%;
+          top: 45%;
+          background: var(--skin);
+          transform: scaleX(-1);
+        }
+      }
+
+      .flower-crown {
+        height: 50%;
+        z-index: 3;
+        top: -10%;
+        left: -10%;
+      }
+
+      .neck {
+        width: 58%;
+        height: 66%;
+        top: 55%;
+        border: 0.4em solid;
+        border-bottom-width: 0.45em;
+        border-radius: 100% / 40%;
+        left: 45%;
+        translate: -50% 0;
+        box-shadow: inset 1em 0em var(--skin-dark);
+        background: var(--skin);
+      }
+
+      .hair-back {
+        width: 160%;
+        height: 100%;
+        background: #fbe7a1;
+        border-radius: 100% / 20%;
+        left: 47%;
+        transform: translate(-50%, 0);
+        top: 10%;
+        -webkit-mask:
+          radial-gradient(25% 100% at 0 0, #0000 99%, #000 0) 0 0 / 60% 100% no-repeat,
+          radial-gradient(25% 100% at 100% 0, #0000 99%, #000 0) 100% 0 / 60% 100% no-repeat
+      }
+
+      .face {
+        width: 100%;
+        height: 100%;
+        border: 0.5em solid;
+        border-left: 0.9em solid var(--skin-dark);
+        border-bottom: 0.4em solid;
+        border-radius: 60% / 5em 5em 10em 10em;
+        background:
+          conic-gradient(from 220deg at 60% 68%, var(--skin-dark) 135deg, #0000 0),
+          linear-gradient(90deg, var(--skin-dark) 53%, var(--skin) 0);
+        background-repeat: no-repeat;
+
+        .glasses {
+          width: 52%;
+          height: 30%;
+          background: #000;
+          border-radius: 50% / 10% 10% 60% 50%;
+          top: 40%;
+          left: -5%;
+
+          &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #000;
+            border-radius: 50% / 10% 10% 50% 60%;
+            left: 115%;
+          }
+
+          &::after {
+            content: "";
+            width: 25%;
+            height: 55%;
+            border-top: 0.5em solid #000;
+            border-radius: 50% / 100% 100% 0 0;
+            left: 95%;
+            top: 10%;
+          }
+        }
+
+        .hair-side {
+          width: 20%;
+          height: 50%;
+          background: #fbe7a1;
+          border-radius: 50%;
+          left: -15%;
+        }
+
+        .hair-front {
+          width: 80%;
+          height: 45%;
+          background: #fbe7a1;
+          border-radius: 100% 0 120% 5%;
+          rotate: 40deg;
+          top: -20%;
+          left: 40%;
+
+          &::after {
+            content: "";
+            rotate: -50deg;
+            width: 115%;
+            height: 80%;
+            background: #fbe7a1;
+            border-radius: 100%;
+            translate: -53% 83%;
+
+          }
+
+          &::before {
+            content: "";
+            width: 25%;
+            height: 25%;
+            right: 0;
+            top: 0;
+            transform: translateY(-90%);
+            background: #fbe7a1;
+            clip-path: polygon(0 0, 60% 50%, 60% 0, 100% 90%, 20% 100%)
+          }
+        }
+
+        .mouth {
+          position: absolute;
+          background-color: currentColor;
+          width: 20%;
+          height: 5%;
+          border-radius: 7px 7px 100px 100px;
+          top: 76%;
+          left: 40%;
+          z-index: 3;
+        }
+      }
+    }
+  }
+
+}
