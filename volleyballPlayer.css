@@ -61,7 +61,6 @@ body {
   font-size: 12px;
 }
 
-
 .article-2 {
   --line-color: #963;
   --skin: #f4e6de;
@@ -69,7 +68,7 @@ body {
   --shirt: white;
   position: relative;
   font-size: 0.75vmin;
-  width: 100em;
+  width: 115em;
   aspect-ratio: 1;
   overflow: hidden;
   border-bottom: 0.5em solid;
