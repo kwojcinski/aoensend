@@ -2,6 +2,7 @@ body {
   background: #fa52;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .main-div {
@@ -30,28 +31,13 @@ body {
   font-family: 'Dancing Script', cursive;
   font-weight: normal;
   font-style: normal;
-  font-size: 80px;
+  font-size: 100px;
   margin: 5px 0;
 
-  color: #674ea7;
+  color: rgb(197, 129, 143);
 
   @media (max-width: 768px) {
     font-size: 60px;
-  }
-}
-
-.title h2 {
-  font-family: 'Dancing Script', cursive;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0;
-  padding: 0;
-  font-size: 40px;
-  color: #e25c67;
-  line-height: 1;
-
-  @media (max-width: 768px) {
-    font-size: 20px;
   }
 }
 
@@ -60,7 +46,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 24px;
-  color: #674ea7;
+  color: rgb(197, 129, 143);
   margin-top: 5px;
 
   @media (max-width: 768px) {
@@ -340,7 +326,7 @@ body {
       border: 0.4em solid;
       border-left-width: 0.5em;
       border-bottom-color: var(--skin);
-      left: 99%;
+      left: 100%;
       top: 33%;
       transform: rotate(-3deg);
 

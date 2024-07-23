@@ -148,6 +148,10 @@
                     width: width + 'px'
                 });
 
+                petal.on("change", () => {
+                    console.log("elo");
+                });
+
                 target.append(petal);
             };
 
