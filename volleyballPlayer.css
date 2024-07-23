@@ -17,9 +17,13 @@ body {
 }
 
 .title {
-  margin-top: 10%;
+  margin-top: 5%;
   width: 100%;
   text-align: center;
+
+  @media (max-width: 768px) {
+    margin-top: 20%;
+  }
 }
 
 .title h1 {
