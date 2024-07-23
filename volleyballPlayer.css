@@ -26,10 +26,14 @@ body {
   font-family: 'Dancing Script', cursive;
   font-weight: normal;
   font-style: normal;
-  font-size: 60px;
+  font-size: 80px;
   margin: 5px 0;
 
   color: #674ea7;
+
+  @media (max-width: 768px) {
+    font-size: 60px;
+  }
 }
 
 .title h2 {
@@ -38,18 +42,26 @@ body {
   font-style: normal;
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 40px;
   color: #e25c67;
   line-height: 1;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .title h3 {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 16px;
+  font-size: 24px;
   color: #674ea7;
   margin-top: 5px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 
@@ -58,7 +70,11 @@ body {
   margin: 30px 0 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 12px;
+  font-size: 16px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .article-2 {
@@ -73,13 +89,17 @@ body {
   overflow: hidden;
   border-bottom: 0.5em solid;
   color: var(--line-color);
-  margin-top: -30%;
+  margin-top: -40%;
 
   & *,
   & *::before,
   & *::after {
     position: absolute;
     box-sizing: border-box;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 0;
   }
 
   .person-2 {
@@ -340,7 +360,7 @@ body {
       aspect-ratio: 1;
       border-radius: 50%;
       left: 95.5%;
-      top: 3%;
+      top: 7%;
     }
   }
 
